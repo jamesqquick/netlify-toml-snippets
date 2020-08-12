@@ -1,0 +1,22 @@
+{
+    "name": "netlify-toml-snippets",
+    "displayName": "netlify-toml-snippets",
+    "description": "Snippets for creating your Netlify.toml configuration file.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "publisher": "jamesqquick",
+    "author": "@jamesqquick",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "toml",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

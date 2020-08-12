@@ -1,0 +1,17 @@
+{
+    "Define Netlify Functions Directory": {
+        "prefix": "nff",
+        "body": ["[build]", "\tfunctions = \"${0}\""],
+        "description": "Define configuration for using Netlify Functions"
+    },
+    "Define API redirect for Netlify Functions": {
+        "prefix": "nfr",
+        "body": [
+            "[[redirects]]",
+            "\tfrom = \"/api/*\"",
+            "\tto= \"/.netlify/functions/:splat\"",
+            "\tstatus = 200"
+        ],
+        "description": "Define redirect for Netlify Functions to simplify calling one."
+    }
+}
